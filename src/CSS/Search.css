@@ -1,0 +1,148 @@
+
+  .add-user {
+    background-color: #4CAF50; /* Green color */
+  border: 100px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 50px;
+  position: absolute;
+  top: 75px;  /* Adjust top position from the top edge */
+  right: 45px;/* Rounded corners */
+  }
+  
+  .add-user:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .table {
+    margin-top: 20px; /* Add some space above the table */
+    border-collapse: collapse; /* Make borders collapse for cleaner look */
+    margin: 0 auto;  /* Center the table horizontally */
+    width: 80%;  /* Set a specific width for the table */
+  }
+  
+  .table th,
+  .table td {
+    padding: 15px;
+    border: 1px solid #ddd; /* Light gray border */
+    text-align: left;
+  }
+  
+  .table th {
+    background-color: #f0f0f0; /* Light gray background for headers */
+    font-weight: bold;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #eee; /* Zebra striping for alternate rows */
+  }
+  
+  /*CSS for FORM */
+  .popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Adjust transparency for a darker overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out; /* Add smooth fade-in/out transition */
+  }
+  
+  .popup.hidden { /* Add a class for hidden state */
+    opacity: 0;
+    visibility: hidden; /* Hide the popup completely when hidden */
+  }
+  
+  .form-container {
+    background-color: #fff;
+    padding: 100px;
+    border-radius: 45px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    max-width: 900px; /* Limit form width for better mobile responsiveness */
+  }
+  
+  .form-heading {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000; /* Text color */
+  }
+  
+  .form-input {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #ddd; /* Light border */
+    padding: 10px; /* Add some padding for better readability */
+    border-radius: 3px; /* Rounded corners for a softer look */
+    font-size: 14px; /* Adjust font size */
+    transition: border-color 0.2s ease-in-out; /* Add smooth border color change */
+  }
+  
+  .form-input:focus {
+    border-color: #3897f0; /* Blue border on focus */
+  }
+  
+  .form-input-label {
+    display: block; /* Display labels inline for better alignment */
+    margin-bottom: 5px;
+    color: #888; /* Label text color */
+    font-size: 14px;
+  }
+  
+  .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px; /* Add some space above buttons */
+  }
+  
+  .form-button {
+    margin-left: 10px;
+    padding: 8px 16px; /* Adjust button padding */
+    border: none; /* Remove border for a cleaner look */
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #3897f0; /* Instagram blue color */
+    color: #fff; /* White text color */
+    font-size: 14px; /* Adjust font size */
+    font-weight: bold; /* Bold text for emphasis */
+    transition: background-color 0.2s ease-in-out; /* Add smooth background color change */
+  }
+  
+  .form-button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+  }
+  
+  /* Additional Elaboration */
+  
+  .close-button { /* Add a close button */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: #ddd; /* Light gray background */
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out; /* Add smooth background color change */
+  }
+  
+  .close-button:hover {
+    background-color: #ccc; /* Darker gray on hover */
+  }
+  
+  .close-button::before { /* Close button icon */
+    content: "x";
+    font-size: 16px;
+    color: #333; /* Black icon color */
+  }
+  
+  

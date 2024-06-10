@@ -1,0 +1,301 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* Container for the whole app */
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Navigation bar styles */
+.navbar {
+  background-color: white;
+  color: black;
+  width: 250px; /* Fixed width for the sidebar */
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+  position: fixed; /* Fix the position */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for distinction */
+}
+
+/* Styles for the left part of the navbar */
+.nav-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+  text-align: center; /* Center text */
+}
+
+/* Styles for the heading in the navbar */
+.nav-left h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* Styles for the list of links in the navbar */
+.nav-left ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Styles for individual list items in the navbar */
+.nav-left ul li {
+  margin-bottom: 10px;
+}
+
+/* Styles for the links in the navbar */
+.nav-left ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center; /* Center align text in links */
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for links in the navbar */
+.nav-left ul li a:hover {
+  background-color: #e0e0e0; /* Light gray hover background */
+}
+
+/* Content area styles */
+.content {
+  margin-left: 250px; /* Margin to the right of the sidebar */
+  padding: 20px;
+  background-color: white;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Home Page Styles */
+.home {
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+.home h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+.posts-container {
+  margin-top: 20px;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.post-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+.post-image:hover {
+  transform: scale(1.05);
+}
+
+.loading,
+.error {
+  font-size: 18px;
+  color: #666;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Login Page Styles */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  h4{
+    text-align: center;
+  }
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 15px;
+}
+
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-button {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #45a049;
+}
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Count Page Styles */
+.count-page {
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+.count-page h1 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.counter-value {
+  font-size: 48px;
+  color: #333;
+  margin: 0 20px;
+}
+
+.counter-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.counter-button:hover {
+  background-color: #45a049;
+}
+
+.counter-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* ConnectedComponent Styles */
+.count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+.count h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.count button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.count button:hover {
+  background-color: #45a049;
+}
+
+/* Fullscreen Image Styles */
+.fullscreen-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.fullscreen-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.fullscreen-img:hover {
+  transform: scale(1.05);
+}
+
+.fullscreen-description {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #666;
+  text-align: center;
+}
+
+
+/* Logo CSS */
+
+.logo {
+  width: 30px;  /* Adjust the width as needed */
+  height: auto;   /* Maintain aspect ratio */
+}
